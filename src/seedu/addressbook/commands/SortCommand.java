@@ -22,8 +22,8 @@ public class SortCommand extends Command {
 
     @Override
     public CommandResult execute() {
-        List<ReadOnlyPerson> allPersonsCopy = new ArrayList<>(addressBook.getAllPersons().immutableListView());
-        allPersonsCopy.sort(Comparator.comparing(person -> person.getName().toString()));
-        return new CommandResult(getMessageForPersonListShownSummary(allPersonsCopy), allPersonsCopy);
+        List<ReadOnlyPerson> relevantPersonsCopy = new ArrayList<>(this.relevantPersons);
+        relevantPersonsCopy.sort(Comparator.comparing(person -> person.getName().toString()));
+        return new CommandResult(getMessageForPersonListShownSummary(relevantPersonsCopy), relevantPersonsCopy);
     }
 }
