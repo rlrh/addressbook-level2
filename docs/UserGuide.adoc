@@ -72,9 +72,9 @@ Examples:
 Shows a list of all persons, along with their non-private details, in the address book. +
 Format: `list`
 
-== Sorting all persons : `sort`
+== Sorting last shown persons : `sort`
 
-Shows a sorted list of all persons, along with their non-private details, in the address book. +
+Shows a sorted list of last shown persons, along with their non-private details, in the address book. +
 Format: `sort`
 
 == Finding all persons containing any keyword in their name: `find`
