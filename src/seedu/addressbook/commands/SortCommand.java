@@ -8,14 +8,14 @@ import java.util.List;
 
 
 /**
- * Lists last shown persons in the address book to the user in alphabetically sorted order.
+ * Lists last shown persons in the address book to the user sorted by name in alphabetical order.
  */
 public class SortCommand extends Command {
 
     public static final String COMMAND_WORD = "sort";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD
-            + ": Sorts last shown persons in the address book in alphabetical order.\n"
+            + ": Displays last-shown persons in the address book sorted by name in alphabetical order as a list with index numbers.\n"
             + "Example: " + COMMAND_WORD;
 
 
