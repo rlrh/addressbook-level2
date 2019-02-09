@@ -3,13 +3,12 @@ package seedu.addressbook.commands;
 import seedu.addressbook.data.person.ReadOnlyPerson;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import java.util.Comparator;
+import java.util.List;
 
 
 /**
- * Lists all persons in the address book to the user.
+ * Lists last shown persons in the address book to the user in alphabetically sorted order.
  */
 public class SortCommand extends Command {
 
