@@ -22,7 +22,7 @@ public class SortCommand extends Command {
     @Override
     public CommandResult execute() {
         List<ReadOnlyPerson> relevantPersonsCopy = new ArrayList<>(this.relevantPersons);
-        relevantPersonsCopy.sort(Comparator.comparing(person -> person.getName().toString()));
+        relevantPersonsCopy.sort(Comparator.comparing(person -> person.getName().fullName.toLowerCase()));
         return new CommandResult(getMessageForPersonListShownSummary(relevantPersonsCopy), relevantPersonsCopy);
     }
 }
