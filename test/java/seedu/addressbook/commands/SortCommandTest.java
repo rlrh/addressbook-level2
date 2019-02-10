@@ -13,7 +13,7 @@ import static org.junit.Assert.assertTrue;
 public class SortCommandTest {
 
     @Test
-    public void execute() throws Exception {
+    public void execute() {
 
         TypicalPersons td = new TypicalPersons();
         AddressBook addressBook = TestUtil.createAddressBook(td.dan, td.candy, td.bill, td.amy);
